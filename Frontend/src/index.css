@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #ffffff;
+  background: #090909;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(225, 48, 108, 0.16), transparent 28%),
+    radial-gradient(circle at right, rgba(67, 97, 238, 0.12), transparent 22%),
+    #090909;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(225, 48, 108, 0.35);
+  color: #fff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.animate-gradient {
+  animation: gradientShift 16s ease-in-out infinite alternate;
+}
+
+.floating-orb {
+  position: absolute;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(225, 48, 108, 0.18), rgba(131, 58, 180, 0.05), transparent 72%);
+  filter: blur(20px);
+  animation: float 14s ease-in-out infinite;
+}
+
+.floating-orb.delay-1000 {
+  animation-delay: 1s;
+}
+
+.floating-orb.delay-2000 {
+  animation-delay: 2s;
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(225, 48, 108, 0.35), rgba(131, 58, 180, 0.2), transparent 65%);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) translateX(10px) scale(1.05);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+    opacity: 0.65;
+  }
+  100% {
+    transform: scale(1.1) translate3d(0, -2%, 0);
+    opacity: 0.95;
+  }
+}
