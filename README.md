@@ -2,8 +2,6 @@
 
 > **Find out who doesn't follow you back on Instagram.** Analyze your followers & following JSON files securely in your browser with 100% privacy.
 
-![InstaFollow Analyzer](Frontend/src/assets/logoNew.avif)
-
 ---
 
 ## ✨ Features
