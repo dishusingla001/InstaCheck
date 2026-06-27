@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FiGithub, FiPlayCircle } from "react-icons/fi";
-import logo from "../assets/logoNew.avif";
 
 const navLinks = [
   { label: "Home", href: "/#home" },
@@ -36,7 +35,7 @@ function Navbar({
         <Link to="/" className="flex items-center gap-3">
           <div className="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_40px_rgba(225,48,108,0.15)] backdrop-blur-xl">
             <img
-              src={'logo'}
+              src="/logoNew.avif"
               alt="InstaFollow Analyzer logo"
               className="h-full w-full object-cover"
             />
